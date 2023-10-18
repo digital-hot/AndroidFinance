@@ -97,7 +97,8 @@ public class DefaultStorage implements Storage {
         currencyAmounts.put(currency, newValue);
     }
 
-    //Перевірка залишків. Сума не повина будти меньше нуля
+    //Перевірка залишків. Сума не по
+    // вина будти меньше нуля
     private void checkAmount(BigDecimal amount) throws AmountException {
         if (amount.compareTo(BigDecimal.ZERO) < 0){
             throw new AmountException("Amount can't be < 0");
