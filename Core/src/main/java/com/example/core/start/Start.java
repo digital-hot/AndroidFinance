@@ -1,4 +1,4 @@
-package com.example.core;
+package com.example.core.start;
 
 import com.example.core.exceptions.AmountException;
 import com.example.core.exceptions.CurrencyException;
@@ -7,7 +7,7 @@ import com.example.core.impls.DefaultStorage;
 import java.math.BigDecimal;
 import java.util.Currency;
 
-public class MyClass {
+public class Start {
     public static void main(String[] args)  {
 
         System.out.print("ok");

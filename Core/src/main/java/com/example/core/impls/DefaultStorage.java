@@ -1,5 +1,6 @@
 package com.example.core.impls;
 
+import com.example.core.abstracts.AbstractTreeNode;
 import com.example.core.exceptions.AmountException;
 import com.example.core.exceptions.CurrencyException;
 import com.example.core.interfaces.Storage;
@@ -11,7 +12,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class DefaultStorage implements Storage {
+public class DefaultStorage extends AbstractTreeNode implements Storage {
 
     private String name;
 
