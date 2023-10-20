@@ -145,6 +145,7 @@ public class DefaultStorage extends AbstractTreeNode implements Storage {
 
         for (Currency currency : currencyList) {
             if (currency.getCurrencyCode().equals(code)) {
+
                 return currency;
             }
         }
