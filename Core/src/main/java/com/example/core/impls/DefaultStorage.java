@@ -1,5 +1,6 @@
 package com.example.core.impls;
 
+import com.example.core.Objects.OperationType;
 import com.example.core.abstracts.AbstractTreeNode;
 import com.example.core.exceptions.AmountException;
 import com.example.core.exceptions.CurrencyException;
@@ -19,6 +20,7 @@ public class DefaultStorage extends AbstractTreeNode implements Storage {
     //Створюэмо (ініцилізуємо) пусті колекції, одна валюту повина бути.
     private Map<Currency, BigDecimal> currencyAmounts = new HashMap<>();
     private List<Currency> currencyList = new ArrayList<>();
+    private OperationType operationType;
 
     public DefaultStorage(){}
 
@@ -158,4 +160,7 @@ public class DefaultStorage extends AbstractTreeNode implements Storage {
     }
 
 
+    public void setOperationType(OperationType operationType) {
+        this.operationType = operationType;
+    }
 }
