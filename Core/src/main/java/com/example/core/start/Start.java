@@ -3,6 +3,7 @@ package com.example.core.start;
 import com.example.core.exceptions.AmountException;
 import com.example.core.exceptions.CurrencyException;
 import com.example.core.impls.DefaultStorage;
+import com.sun.tools.javac.parser.Scanner;
 
 import java.math.BigDecimal;
 import java.util.Currency;
@@ -11,6 +12,8 @@ public class Start {
     public static void main(String[] args)  {
 
         System.out.print("ok");
+
+
 
         try {
             DefaultStorage storage = new DefaultStorage();
